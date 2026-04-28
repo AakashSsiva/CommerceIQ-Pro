@@ -1,22 +1,42 @@
-# CommerceIQ Pro — Executive Sales Intelligence Platform
+<div align="center">
 
-> **Production-grade, FAANG-style analytics dashboard** built with React, Vite, Tailwind CSS, and Recharts.  
-> Designed to operate like a real SaaS BI product — not just a chart page.
+# 🛒 CommerceIQ Pro
+
+### Executive Sales Intelligence Platform
+
+**Production-grade, FAANG-style analytics dashboard built with React + Vite + Tailwind CSS**
+
+[![React](https://img.shields.io/badge/React-18-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://react.dev/)
+[![Vite](https://img.shields.io/badge/Vite-8-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev/)
+[![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-v3-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
+[![Recharts](https://img.shields.io/badge/Recharts-2.x-22B5BF?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZmlsbD0iI2ZmZiIgZD0iTTMgM3YxOGgxOFYzSDN6bTE2IDE2SDVWNWgxNHYxNHoiLz48L3N2Zz4=&logoColor=white)](https://recharts.org/)
+[![Framer Motion](https://img.shields.io/badge/Framer_Motion-11-FF0055?style=for-the-badge&logo=framer&logoColor=white)](https://www.framer.com/motion/)
+[![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](./LICENSE)
+[![PRs Welcome](https://img.shields.io/badge/PRs-Welcome-brightgreen?style=for-the-badge&logo=github)](https://github.com/)
+[![Made with Love](https://img.shields.io/badge/Made_with-❤️-red?style=for-the-badge)](https://github.com/)
+
+---
+
+*Designed to operate like a real SaaS BI product — not just a chart page.*
+
+[View Live Demo](#) · [Report Bug](https://github.com/) · [Request Feature](https://github.com/)
+
+</div>
 
 ---
 
 ## 📸 Dashboard Preview
 
-### Header · Filters · KPI Cards
+### 🏠 Header · Executive Filters · KPI Intelligence Cards
 ![Header, Filters and KPI Cards](./docs/screenshots/01_header_kpi.png)
 
-### Analytics Charts — Sales Trend · Channel · Category · Region
+### 📊 Analytics Suite — Sales Trend · Channel · Category · Region
 ![Analytics Charts](./docs/screenshots/02_charts.png)
 
-### Live Product Intelligence Table
+### 📋 Live Product Intelligence Table
 ![Product Intelligence Table](./docs/screenshots/03_product_table.png)
 
-### Executive Reports · System Settings
+### 📄 Executive Reports · ⚙️ System Settings
 ![Executive Reports and Settings](./docs/screenshots/04_reports_settings.png)
 
 ### 🔔 Notification Center
@@ -27,143 +47,144 @@
 
 ---
 
-## 🚀 Live Features
+## 🚀 Feature Overview
+
+<table>
+<tr>
+<td valign="top" width="50%">
 
 ### 🏠 Executive Header
-| Element | Description |
-|---------|-------------|
-| Logo + Brand | CommerceIQ Pro branding |
-| Import CSV | Upload raw order data, auto-parsed and validated |
-| Export Panel | Excel · CSV · PDF · Screenshot — 4 export modes |
-| Theme Toggle | Light / Dark mode switch |
-| 🔔 Notification Bell | Live alert center with unread badge |
-| 👤 Profile Menu | Identity, role, preferences, saved reports |
+- CommerceIQ Pro branding & logo
+- Import CSV — auto-parsed & deduplicated
+- Export: Excel · CSV · PDF · Screenshot
+- Light / Dark theme toggle
+- 🔔 Notification bell with unread badge
+- 👤 Full Profile module
 
----
+</td>
+<td valign="top" width="50%">
 
 ### 🎛️ FAANG Executive Filters
-All filters update KPI cards, charts, tables, and insights **in real-time**:
+- **7 live slicers** — all update in real-time:
+  - Date Range · Region · Channel
+  - Category · Gender · Rating ★
+  - Product Search (live text filter)
 
-| Filter | Options |
-|--------|---------|
-| Date Range | Today · Last 7 Days · Last 30 Days · Quarterly · Yearly · All Time |
-| Region | North · South · East · West |
-| Channel | Website · Mobile App · Marketplace · Retail Partner |
-| Category | Electronics · Fashion · Home · Beauty · Accessories |
-| Gender | Male · Female · Other |
-| Rating | 1★ – 5★ |
-| Search Product | Live text search |
+</td>
+</tr>
+<tr>
+<td valign="top">
 
----
-
-### 📈 KPI Intelligence Cards (6 Cards with Sparklines)
-| Card | Metric |
-|------|--------|
+### 📈 KPI Intelligence Cards (6 Cards)
+| KPI | Metric |
+|-----|--------|
 | Total Orders | Transaction count |
-| Gross Revenue | Full sales in selected currency |
+| Gross Revenue | Currency-aware |
 | Quantity Sold | Total units |
 | Avg Rating | Customer satisfaction |
-| Avg Delivery | Logistics performance (days) |
-| Growth % | Month-over-month trend |
+| Avg Delivery | Logistics (days) |
+| Growth % | MoM trend |
 
-Each card includes an **inline SVG sparkline** and trend badge.
+> Each card includes an **inline SVG sparkline** + trend badge
 
----
+</td>
+<td valign="top">
 
-### 📊 Live Recharts Analytics Suite
-| Chart | Type | Description |
-|-------|------|-------------|
-| Sales Trend | Area Chart | Live 3-second ticker · NOW reference line · dual revenue + orders series |
-| Channel Performance | Horizontal Bar | Revenue by acquisition source |
-| Category Distribution | Donut Chart | Order share with % labels |
-| Region Comparison | Horizontal Bar | Geographic revenue breakdown |
-| AI Forecast | Line Chart | Projected 2-month sales outlook |
+### 📊 Recharts Analytics Suite
+| Chart | Type |
+|-------|------|
+| Sales Trend | Area · **Live 3s ticker** |
+| Channel Performance | Horizontal Bar |
+| Category Distribution | Donut Chart |
+| Region Comparison | Horizontal Bar |
+| AI Forecast | Projected Line |
 
----
+</td>
+</tr>
+<tr>
+<td valign="top">
 
 ### ⚠️ Duplicate Detection Engine
-- Automatically scans all uploaded data for duplicate `Invoice_ID` records
-- Strips duplicates before they reach the KPI engine
-- Shows alert banner with exact duplicate IDs and "Cleaned" badge
-- Fires a notification to the Notification Center on every detection
+- Auto-scans all data for duplicate `Invoice_ID`
+- Strips duplicates before KPI calculation
+- Alert banner with exact IDs + "Cleaned" badge
+- Fires notification on detection
 
----
+</td>
+<td valign="top">
 
 ### 📋 Live Product Intelligence Table
-- Sortable by **Revenue · Quantity · Rating** (click column headers)
-- Live product search within table
+- Sortable: Revenue · Quantity · Rating
+- Live search within table
 - **TOP badge** for highest revenue product
-- **Trend icon** — rising (green) or falling (red) based on rating
-- Fully filtered from the global Executive Filter Bar
+- Trend icons: rising 🟢 / declining 🔴
 
----
+</td>
+</tr>
+<tr>
+<td valign="top">
 
-### 📄 Executive Reports (Functional Downloads)
-| Report | Format | Content |
-|--------|--------|---------|
-| Weekly Report | Excel `.xlsx` | Last 50 filtered orders |
-| Monthly Summary | CSV | Month-by-month revenue & order counts |
-| Risk Report | Excel `.xlsx` | Orders with Rating < 3 or Delivery > 5 days |
-| Forecast Report | PDF | Full dashboard snapshot |
+### 📄 Executive Reports (Functional)
+| Report | Format | Action |
+|--------|--------|--------|
+| Weekly Report | `.xlsx` | Last 50 filtered orders |
+| Monthly Summary | `.csv` | Month-by-month revenue |
+| Risk Report | `.xlsx` | Low-rating + late delivery |
+| Forecast Report | `.pdf` | Full dashboard snapshot |
 
-Each button shows **Generating… → Downloaded ✓** state feedback.
+> Shows **Generating… → Downloaded ✓** feedback
 
----
+</td>
+<td valign="top">
 
 ### 👤 Profile Module
-| Section | Features |
-|---------|----------|
-| Identity | Editable name · Role · Email · Access level badge |
-| Access Level | Admin · Analyst · Executive · Viewer (switchable) |
-| Profile Analytics | Last Login · Files Uploaded · Reports Exported (live counters) |
-| Quick Preferences | Dark Mode toggle · Currency · Language (visible inline) |
-| Saved Reports | Bookmarked reports accessible from profile |
-| Sign Out | Logout button |
+- Editable name + role + email
+- Access level: Admin · Analyst · Executive · Viewer
+- **Analytics Strip**: Last Login · Uploads · Exports
+- Quick Preferences: Theme · Currency · Language
+- Saved Reports list
+- Sign Out button
 
----
+</td>
+</tr>
+<tr>
+<td valign="top">
 
 ### 🔔 Notification Center
-- **4 notification types**: Info · Success · Warning · Error
-- **Auto-fired events**: CSV import, export complete, duplicate detected, low rating alert
-- Unread badge count on bell icon
+- 4 types: Info · Success · Warning · Error
+- Auto-triggered: import, export, duplicates, alerts
 - Mark single / mark all as read
-- Accessible via header bell icon — dismisses on outside click
+- Animated unread badge counter
 
----
+</td>
+<td valign="top">
 
-### ⚙️ System Settings Panel
+### ⚙️ System Settings
 | Setting | Options |
 |---------|---------|
-| Appearance | Executive White (Light) / Slate Premium (Dark) |
-| Currency | 🇺🇸 USD · 🇮🇳 INR · 🇪🇺 EUR · 🇬🇧 GBP · 🇯🇵 JPY · 🇨🇦 CAD · 🇦🇺 AUD · 🇸🇬 SGD · 🇦🇪 AED |
-| Language | English (US/UK) · Tamil · Hindi · French · German · Japanese · Arabic · Chinese |
-| Number Format | International (1,234,567) · Indian (12,34,567) |
+| Appearance | Light / Dark |
+| Currency | 9 countries with flags 🇺🇸🇮🇳🇪🇺🇬🇧🇯🇵🇨🇦🇦🇺🇸🇬🇦🇪 |
+| Language | 9 country-based languages |
+| Number Format | International / Indian |
+
+</td>
+</tr>
+</table>
 
 ---
 
-### 📤 Export Engine (4 Modes)
-- **CSV** — raw filtered dataset
-- **Excel** — structured `.xlsx` workbook
-- **PDF** — full dashboard executive report snapshot
-- **Screenshot** — standalone PDF capture for portfolio
+## 🛠️ Tech Stack
 
-Every export increments the **Reports Exported** counter in the Profile module.
-
----
-
-## 🛠️ Technology Stack
-
-| Layer | Technology |
-|-------|-----------|
-| Framework | React 18 + Vite 8 |
-| Styling | Tailwind CSS v3 (custom token system) |
-| Animations | Framer Motion |
-| Icons | Lucide React |
-| Charts | Recharts (Area · Bar · Donut · Line) |
-| Data Parsing | PapaParse (CSV) |
-| Excel Export | XLSX + file-saver |
-| PDF Export | jsPDF + html2canvas |
-| State | React Context API (`DataContext`) |
+[![React](https://img.shields.io/badge/React_18-Framework-61DAFB?logo=react&logoColor=black&style=flat-square)](https://react.dev/)
+[![Vite](https://img.shields.io/badge/Vite_8-Build_Tool-646CFF?logo=vite&logoColor=white&style=flat-square)](https://vitejs.dev/)
+[![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS_v3-Styling-38B2AC?logo=tailwind-css&logoColor=white&style=flat-square)](https://tailwindcss.com/)
+[![Recharts](https://img.shields.io/badge/Recharts-Charts-22B5BF?style=flat-square)](https://recharts.org/)
+[![Framer Motion](https://img.shields.io/badge/Framer_Motion-Animations-FF0055?logo=framer&logoColor=white&style=flat-square)](https://www.framer.com/motion/)
+[![Lucide](https://img.shields.io/badge/Lucide_React-Icons-F56565?logo=lucide&logoColor=white&style=flat-square)](https://lucide.dev/)
+[![PapaParse](https://img.shields.io/badge/PapaParse-CSV_Parser-00C851?style=flat-square)](https://www.papaparse.com/)
+[![XLSX](https://img.shields.io/badge/XLSX-Excel_Export-217346?logo=microsoft-excel&logoColor=white&style=flat-square)](https://sheetjs.com/)
+[![jsPDF](https://img.shields.io/badge/jsPDF-PDF_Export-EF4444?style=flat-square)](https://jspdf.io/)
+[![html2canvas](https://img.shields.io/badge/html2canvas-Screenshot-8B5CF6?style=flat-square)](https://html2canvas.hertzen.com/)
 
 ---
 
@@ -175,83 +196,104 @@ commerceiq/
 │
 ├── src/
 │   ├── charts/
-│   │   ├── SalesTrendChart.jsx       ← Live 3s ticker, NOW reference line
-│   │   ├── ChannelChart.jsx
-│   │   ├── CategoryDonutChart.jsx    ← New donut chart
-│   │   ├── RegionChart.jsx           ← New region comparison
-│   │   └── ForecastChart.jsx
+│   │   ├── SalesTrendChart.jsx       ← Live 3s ticker + NOW reference line
+│   │   ├── ChannelChart.jsx          ← Revenue by channel
+│   │   ├── CategoryDonutChart.jsx    ← Order share donut
+│   │   ├── RegionChart.jsx           ← Geographic bar chart
+│   │   └── ForecastChart.jsx         ← Projected outlook
 │   │
 │   ├── components/
-│   │   ├── Header.jsx                ← FAANG enterprise header
+│   │   ├── Header.jsx                ← Enterprise FAANG header
 │   │   ├── KPIcards.jsx              ← 6 cards + inline sparklines
-│   │   ├── DuplicateAlert.jsx
-│   │   ├── ProductTable.jsx          ← Sortable + searchable
+│   │   ├── DuplicateAlert.jsx        ← Deduplication alert banner
+│   │   ├── ProductTable.jsx          ← Sortable + searchable table
 │   │   ├── SettingsPanel.jsx         ← Currency, Language, Theme
 │   │   ├── NotificationBell.jsx      ← Notification center
 │   │   └── ProfileMenu.jsx           ← Full profile module
 │   │
 │   ├── context/
-│   │   └── DataContext.jsx           ← Global analytics engine + state
+│   │   └── DataContext.jsx           ← Global analytics engine + all state
 │   │
 │   ├── data/
-│   │   └── mockData.js               ← 250 realistic orders + duplicates
+│   │   └── mockData.js               ← 250 realistic orders + injected duplicates
 │   │
 │   ├── exports/
-│   │   ├── ExportPanel.jsx
-│   │   ├── exportExcel.js
-│   │   └── exportPDF.js
+│   │   ├── ExportPanel.jsx           ← 4-mode export dropdown
+│   │   ├── exportExcel.js            ← XLSX workbook generator
+│   │   └── exportPDF.js              ← jsPDF + html2canvas
 │   │
 │   ├── filters/
-│   │   └── FilterBar.jsx             ← 7 executive filters
+│   │   └── FilterBar.jsx             ← 7 FAANG executive filters
 │   │
 │   ├── insights/
-│   │   ├── ExecutiveReports.jsx      ← Functional real downloads
-│   │   └── AIInsights.jsx
+│   │   └── ExecutiveReports.jsx      ← Functional real-download reports
 │   │
 │   ├── utils/
-│   │   ├── csvParser.js
-│   │   └── duplicateDetector.js
+│   │   ├── csvParser.js              ← PapaParse wrapper
+│   │   └── duplicateDetector.js      ← Invoice_ID deduplicator
 │   │
-│   ├── App.jsx
+│   ├── App.jsx                       ← Layout assembly
 │   ├── main.jsx
 │   └── index.css                     ← Professional CSS token system
 │
-├── tailwind.config.js
+├── docs/
+│   └── screenshots/                  ← Dashboard preview images
+│
+├── tailwind.config.js                ← Custom color tokens + dark mode
 ├── vite.config.js
 └── package.json
 ```
 
 ---
 
-## ⚙️ Local Development
+## ⚙️ Quick Start
 
-### Install dependencies
+### 1. Clone the repository
+```bash
+git clone https://github.com/yourusername/commerceiq.git
+cd commerceiq
+```
+
+### 2. Install dependencies
 ```bash
 npm install
 ```
 
-### Start the development server
+### 3. Start the development server
 ```bash
 npm run dev
 ```
-→ Opens at **http://localhost:5173/**
+Opens at **[http://localhost:5173](http://localhost:5173)**
 
-### Build for production
+### 4. Build for production
 ```bash
 npm run build
 ```
-→ Outputs optimized bundle to `dist/` — ready for Vercel or Netlify.
+Outputs optimized bundle to `dist/` — deploy-ready.
 
 ---
 
 ## 🚀 Deployment
 
-Deploy the `dist/` folder to:
+| Platform | Steps |
+|----------|-------|
+| **Vercel** | `vercel --prod` or connect GitHub repo |
+| **Netlify** | Drag `dist/` folder to Netlify dashboard |
+| **GitHub Pages** | Set `base` in `vite.config.js` + `gh-pages` |
 
-| Platform | Command |
-|----------|---------|
-| **Vercel** | `vercel --prod` |
-| **Netlify** | Drag `dist/` to Netlify dashboard |
+---
+
+## 💡 How to Use
+
+### Importing Data
+1. Click **"Import CSV"** in the header
+2. Upload a `.csv` with columns: `Order_ID`, `Date`, `Region`, `Channel`, `Category`, `Product`, `Price`, `Quantity`, `Rating`
+3. The engine auto-parses, deduplicates, and hot-reloads all charts
+
+### Exporting Data
+1. Click **"Export"** dropdown → choose Excel · CSV · PDF · Screenshot
+2. Download triggers instantly
+3. Export counter in Profile increments live
 
 ---
 
@@ -269,18 +311,32 @@ Deploy the `dist/` folder to:
 
 ---
 
-## 💡 How to Use Import / Export
+## 📊 What This Demonstrates
 
-### Importing Data
-1. Click **"Import CSV"** in the header
-2. Select any `.csv` file with columns: `Order_ID`, `Date`, `Region`, `Channel`, `Category`, `Product`, `Price`, `Quantity`, `Rating`
-3. The engine auto-parses, deduplicates, and hot-loads the data into all charts and KPIs
-
-### Exporting Data
-1. Click **"Export"** dropdown in the header
-2. Choose: **Excel · CSV · PDF · Screenshot**
-3. The download triggers instantly — the export counter in your Profile updates live
+[![BI Thinking](https://img.shields.io/badge/✅-BI_Thinking-003A70?style=flat-square)](https://github.com/)
+[![Product Thinking](https://img.shields.io/badge/✅-Product_Thinking-00A676?style=flat-square)](https://github.com/)
+[![Analytics Engineering](https://img.shields.io/badge/✅-Analytics_Engineering-3B82F6?style=flat-square)](https://github.com/)
+[![UI Maturity](https://img.shields.io/badge/✅-UI_Maturity-8B5CF6?style=flat-square)](https://github.com/)
+[![Executive Reporting](https://img.shields.io/badge/✅-Executive_Reporting-E4572E?style=flat-square)](https://github.com/)
+[![Enterprise Architecture](https://img.shields.io/badge/✅-Enterprise_Architecture-F59E0B?style=flat-square)](https://github.com/)
 
 ---
 
-*Built with ❤️ as a production-grade portfolio analytics platform.*
+## 📜 License
+
+```
+MIT License — free to use, modify, and distribute.
+```
+
+---
+
+<div align="center">
+
+**Built with ❤️ for professional analytics portfolios**
+
+[![GitHub Stars](https://img.shields.io/github/stars/yourusername/commerceiq?style=social)](https://github.com/)
+[![GitHub Forks](https://img.shields.io/github/forks/yourusername/commerceiq?style=social)](https://github.com/)
+
+*If this project helped you, consider giving it a ⭐ on GitHub!*
+
+</div>
