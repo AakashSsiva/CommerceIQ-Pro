@@ -5,28 +5,27 @@
 
 ---
 
-## 📸 Screenshots
+## 📸 Dashboard Preview
 
-### Header · Executive Filters · KPI Intelligence Cards
-![Header, Filters and KPI Cards](docs/screenshots/01_header_kpi.png)
+### Header · Filters · KPI Cards
+![Header, Filters and KPI Cards](./docs/screenshots/01_header_kpi.png)
 
-### Live Sales Trend · Channel · Category · Region Charts
-![Analytics Charts](docs/screenshots/02_charts.png)
+### Analytics Charts — Sales Trend · Channel · Category · Region
+![Analytics Charts](./docs/screenshots/02_charts.png)
 
 ### Live Product Intelligence Table
-![Product Table](docs/screenshots/03_product_table.png)
+![Product Intelligence Table](./docs/screenshots/03_product_table.png)
 
 ### Executive Reports · System Settings
-![Executive Reports and Settings](docs/screenshots/04_reports_settings.png)
+![Executive Reports and Settings](./docs/screenshots/04_reports_settings.png)
 
 ### 🔔 Notification Center
-![Notification Center](docs/screenshots/05_notifications.png)
+![Notification Center](./docs/screenshots/05_notifications.png)
 
 ### 👤 Profile Module
-![Profile Module](docs/screenshots/06_profile.png)
+![Profile Module](./docs/screenshots/06_profile.png)
 
 ---
-
 
 ## 🚀 Live Features
 
