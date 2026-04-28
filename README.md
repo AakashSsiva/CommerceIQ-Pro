@@ -250,8 +250,8 @@ commerceiq/
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/yourusername/commerceiq.git
-cd commerceiq
+git clone https://github.com/AakashSsiva/CommerceIQ-Pro.git
+cd CommerceIQ-Pro
 ```
 
 ### 2. Install dependencies
@@ -334,8 +334,8 @@ MIT License — free to use, modify, and distribute.
 
 **Built with ❤️ for professional analytics portfolios**
 
-[![GitHub Stars](https://img.shields.io/github/stars/yourusername/commerceiq?style=social)](https://github.com/)
-[![GitHub Forks](https://img.shields.io/github/forks/yourusername/commerceiq?style=social)](https://github.com/)
+[![GitHub Stars](https://img.shields.io/github/stars/AakashSsiva/CommerceIQ-Pro?style=social)](https://github.com/AakashSsiva/CommerceIQ-Pro)
+[![GitHub Forks](https://img.shields.io/github/forks/AakashSsiva/CommerceIQ-Pro?style=social)](https://github.com/AakashSsiva/CommerceIQ-Pro)
 
 *If this project helped you, consider giving it a ⭐ on GitHub!*
 
